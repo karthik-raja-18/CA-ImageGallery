@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <p>Click on images to view in lightbox. Use filters to change categories or apply effects.</p>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="animals">Animals</button>
+            <button class="filter-btn" data-filter="people">People</button>
+            <button class="filter-btn" data-filter="none">No Filter</button>
+            <button class="filter-btn" data-filter="grayscale">Grayscale</button>
+            <button class="filter-btn" data-filter="sepia">Sepia</button>
+            <button class="filter-btn" data-filter="blur">Blur</button>
+            <button class="filter-btn" data-filter="brightness">Brightness</button>
+            <button class="filter-btn" data-filter="contrast">Contrast</button>
+        </div>
+
+        <div class="gallery">
+        </div>
+    </div>
+
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn">&times;</button>
+            <button class="nav-btn prev-btn">&#10094;</button>
+            <img src="" alt="Gallery Image" class="lightbox-img">
+            <button class="nav-btn next-btn">&#10095;</button>
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
